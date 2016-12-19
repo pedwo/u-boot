@@ -7,11 +7,11 @@ obj-$(CONFIG_$(SPL_)CLK)	+= clk/
 obj-$(CONFIG_$(SPL_)LED)	+= led/
 obj-$(CONFIG_$(SPL_)PINCTRL)	+= pinctrl/
 obj-$(CONFIG_$(SPL_)RAM)	+= ram/
+obj-$(CONFIG_$(SPL_)I2C)	+= i2c/
 
 ifdef CONFIG_SPL_BUILD
 
 obj-$(CONFIG_SPL_CRYPTO_SUPPORT) += crypto/
-obj-$(CONFIG_SPL_I2C_SUPPORT) += i2c/
 obj-$(CONFIG_SPL_GPIO_SUPPORT) += gpio/
 obj-$(CONFIG_SPL_MMC_SUPPORT) += mmc/
 obj-$(CONFIG_SPL_MPC8XXX_INIT_DDR_SUPPORT) += ddr/fsl/

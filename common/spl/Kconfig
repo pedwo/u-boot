@@ -267,6 +267,8 @@ config SPL_GPIO_SUPPORT
 config SPL_I2C_SUPPORT
 	bool "Support I2C"
 	depends on SPL
+	default y if (AM33XX || OMAP34XX || OMAP44XX || OMAP54XX)
+	default n
 	help
 	  Enable support for the I2C (Inter-Integrated Circuit) bus in SPL.
 	  I2C works with a clock and data line which can be driven by a

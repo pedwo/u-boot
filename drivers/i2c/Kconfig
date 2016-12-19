@@ -4,6 +4,12 @@
 
 menu "I2C support"
 
+config I2C
+	bool "Enable I2C"
+	default y
+	help
+	  Enable I2C.
+
 config DM_I2C
 	bool "Enable Driver Model for I2C drivers"
 	depends on DM
